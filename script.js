@@ -63,10 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Form Submission
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+  // Form Submission
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       
-      // Simulate API submission
+      const data = new FormData(contactForm);
+      await fetch('https://formspree.io/f/xwvdowyq', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      
       contactForm.classList.add('hidden');
       if (successMsg) successMsg.classList.add('active');
     });
