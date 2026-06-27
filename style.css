@@ -870,3 +870,22 @@ gap: 120px;
 .card-featured:hover .btn-plan-featured {
   background: #e0e0e0;
 }
+/* Alineación tarjetas planes */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-popular {
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 0 auto 8px auto;
+}
+.card-tag {
+  display: block;
+  text-align: center;
+}
+.btn-plan {
+  margin-top: auto;
+}
