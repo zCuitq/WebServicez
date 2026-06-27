@@ -812,3 +812,25 @@ gap: 120px;
 .nav-link:active, .drawer-link:active {
   opacity: 0.6;
 }
+/* Botón planes */
+.btn-plan {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 0;
+  background: #fff;
+  color: #0a0a0a;
+  border: 1.5px solid #0a0a0a;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.card:hover .btn-plan {
+  background: #0a0a0a;
+  color: #fff;
+}
+.btn-plan:active {
+  transform: scale(0.97);
+}
