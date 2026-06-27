@@ -417,8 +417,7 @@ font-weight: 600;
 line-height: 1.3;
 letter-spacing: -0.01em;
 color: var(--color-primary-dark);
-margin-bottom: 48px;
-text-align: left;
+text-align: center;
 }
 
 .portfolio-list {
