@@ -762,3 +762,53 @@ gap: 8px;
 gap: 120px;
 }
 }
+/* === ANIMACIONES HOVER Y CLICK === */
+
+/* Botones */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.btn:active {
+  transform: translateY(0px) scale(0.97);
+  box-shadow: none;
+}
+
+/* Tarjetas */
+.card, .service-card, .pricing-card, .portfolio-item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+.card:hover, .service-card:hover, .pricing-card:hover, .portfolio-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+}
+.card:active, .service-card:active, .pricing-card:active, .portfolio-item:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Links del menú */
+.nav-link, .drawer-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+.nav-link::after, .drawer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background: #0a0a0a;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after, .drawer-link:hover::after {
+  width: 100%;
+}
+.nav-link:active, .drawer-link:active {
+  opacity: 0.6;
+}
